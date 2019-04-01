@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>942</width>
+    <width>334</width>
     <height>593</height>
    </rect>
   </property>
@@ -187,14 +187,24 @@
   <widget class="QLabel" name="labelWynik">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>350</y>
+     <x>130</x>
+     <y>510</y>
      <width>47</width>
      <height>13</height>
     </rect>
    </property>
    <property name="text">
     <string>Wynik</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>230</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
    </property>
   </widget>
  </widget>
