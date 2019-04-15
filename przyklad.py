@@ -24,9 +24,9 @@ class Window(QWidget):
         # ladne ustawienie i wyrodkowanie
         grid = QGridLayout(self)
         grid.addWidget(self.button,1,1)
-        grid.addWidget(self.xlabel,1,2)
-        grid.addWidget(self.xEdit,2,1)
-        grid.addWidget(self.ylabel,2,2)
+        grid.addWidget(self.xlabel,1,0)
+        grid.addWidget(self.xEdit,2,0)
+        grid.addWidget(self.ylabel,2,1)
         grid.addWidget(self.yEdit,3,1)
         grid.addWidget(self.canvas,4,2,-1,-1)
 

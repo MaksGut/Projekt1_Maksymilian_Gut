@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>334</width>
-    <height>593</height>
+    <width>354</width>
+    <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -125,7 +125,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditYC_2">
+  <widget class="QLineEdit" name="lineEditYD">
    <property name="geometry">
     <rect>
      <x>183</x>
@@ -171,10 +171,10 @@
     <string>D</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButtonOblicz">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>150</x>
      <y>170</y>
      <width>75</width>
      <height>23</height>
@@ -187,8 +187,8 @@
   <widget class="QLabel" name="labelWynik">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>510</y>
+     <x>160</x>
+     <y>480</y>
      <width>47</width>
      <height>13</height>
     </rect>
@@ -200,8 +200,8 @@
   <widget class="QGraphicsView" name="graphicsView">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>230</y>
+     <x>50</x>
+     <y>220</y>
      <width>256</width>
      <height>192</height>
     </rect>
@@ -209,5 +209,22 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonOblicz</sender>
+   <signal>clicked()</signal>
+   <receiver>labelWynik</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>181</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
