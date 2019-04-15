@@ -131,8 +131,13 @@ class Window(QWidget):
             self.figure.clear()
             ax = self.figure.add_subplot(111)
             ax.plot(x1, y1, '-', color=clr)
+            ax.text(Xp, Yp, 'P')
             ax.plot(x2,y2,'-',color=clr)
             ax.plot(Xp,Yp,'o', color=clr)
+            ax.text(x1[0],y1[0], 'A')
+            ax.text(x1[1],y1[1], 'B')
+            ax.text(x2[0],y2[0], 'C')
+            ax.text(x2[1],y2[1], 'D')
             self.canvas.draw()
                 
 
