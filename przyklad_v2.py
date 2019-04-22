@@ -60,7 +60,7 @@ class Window(QWidget):
         layout.addWidget(self.canvas, 4, 1, 1, -1)
         layout.addWidget(self.clrChoose, 5, 1, 1, -1)
         
-        layout.addWidget(self.Wyniklabel, 6, 5)
+        layout.addWidget(self.Wyniklabel, 6, 4)
         # połączenie przycisku (signal) z akcją (slot)
         self.button.clicked.connect(self.handleButton)
         self.clrChoose.clicked.connect(self.clrChooseF)
@@ -133,7 +133,7 @@ class Window(QWidget):
             ax.plot(x1, y1, '-', color=clr)
             ax.text(Xp, Yp, 'P')
             ax.plot(x2,y2,'-',color=clr)
-            ax.plot(Xp,Yp,'o', color=clr)
+            ax.plot(Xp,Yp,'o',)
             ax.text(x1[0],y1[0], 'A')
             ax.text(x1[1],y1[1], 'B')
             ax.text(x2[0],y2[0], 'C')
