@@ -211,12 +211,8 @@ class Window(QWidget):
                 ax.plot([x2[0],Xp],[y2[0], Yp], c=clr2, linestyle='dashed')
             self.canvas.draw()
         
-        Xpt=str(Xp)
-        Ypt=str(Yp)
-        self.WspolrzednaXp.setText(Xpt)
-        self.WspolrzednaYp.setText(Ypt)
-        self.WspolrzednaX.setText('Współrzędna X:')
-        self.WspolrzednaY.setText('Współrzędna Y:')
+        self.WspolrzednaX.setText('Współrzędna X: {:.2f}'.format(Xp))
+        self.WspolrzednaY.setText('Współrzędna Y: {:.2f}'.format(Yp))
     def handleButton(self):
         self.rysuj()
 
